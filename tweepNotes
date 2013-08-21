@@ -23,7 +23,7 @@ The best practice for ingesting Tweets and other streaming messages is to decoup
 
 Delete messages  may be delivered before the original tweet so implementations should be able to replay a local cache of unrecognized deletes.
 
-7. Duplicate messages maybe delivered so the clients should be tolerant of receiving a tweet more than once. This is most likely to occur when reconnecting to or backfilling from the Streaming API. Backfilling from the REST API will also tend to produce duplicates. Make sure to handle duplicate messages and use the since_id REST parameter to reduce duplication, latency and server-side load.
+7.//??? Duplicate messages maybe delivered so the clients should be tolerant of receiving a tweet more than once. This is most likely to occur when reconnecting to or backfilling from the Streaming API. Backfilling from the REST API will also tend to produce duplicates. Make sure to handle duplicate messages and use the since_id REST parameter to reduce duplication, latency and server-side load.
 
 8. Request gzipped stream. It can reduce the bandwidth needed to process a stream to as small as the 1/5th of the uncompressed stream. Sometimes twitter may not deliver a gzipped stream, even if one was request. Check the Content-Encoding header to verify that the stream is actually being compressed. 
 
@@ -81,7 +81,7 @@ In addition to the stsndard twitter payloads described above, following kind of 
 	
 - User stream messages 
 	 NOT DOCUMENTED
-- Site stream messages
+- Site stream messages (or ye kiss kaam ka h)?
 	NOT DOCUMENTED
 
 
